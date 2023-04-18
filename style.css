@@ -24,7 +24,7 @@ nav a {
     margin: 3%;
     font-size: 20pt;
 }
-main{
+main {
     flex: 20 1 500px;
     height:  calc(100vh - 224px);
 }
@@ -37,7 +37,7 @@ footer{
 }
 a{
     text-decoration: none;
-color: inherit;
+    color: inherit;
 }
 @media only screen and (max-width: 923px){
 main {
@@ -52,10 +52,10 @@ aside {
     #openMenu #closeMenu {
         display: block;
     }
-    #openMenu{
+    #openMenu {
 margin-left: auto;
     }
-    #closeMenu{
+    #closeMenu {
         position: fixed;
         right: 15px;
         top: 15px;
