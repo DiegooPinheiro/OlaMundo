@@ -1,19 +1,19 @@
 header {
-    flex: 1 1 100 vw;
+    flex: 1 1 100vw;
     height: 100px;
 }
-header #logo{
-    flex: 9  1 200px;
+header #logo {
+    flex: 0  1 200px;
     background: #c9c9c9;
 }
 #openMenu #closeMenu {
     border: none;
-background: none;
-font-size: 30px;
-font-weight: bold;
-padding: 0px 5px 0px 5px;
-cursor:pointer;
-display: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    cursor:pointer;
+    display: none;
 }
 nav {
     flex: 1 1 100vw;
