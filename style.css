@@ -1,0 +1,41 @@
+header {
+    flex: 1 1 100 vw;
+    height: 100px;
+}
+header #logo{
+    flex: 9  1 200px;
+    background: #c9c9c9;
+}
+nav {
+    flex: 1 1 100vw;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav a {
+    margin: 3%;
+    font-size: 20pt;
+}
+main{
+    flex: 20 1 500px;
+    height:  calc(100vh - 224px);
+}
+aside{
+    flex: 1 1 200px;
+}
+footer{
+    flex: 1 1 100vw;
+    height: 100px;
+}
+a{
+    text-decoration: none;
+color: inherit;
+}
+@media only screen and (max-width: 923px){
+main {
+    height: calc(100vh - 330px);
+}
+aside {
+    flex: 1 1 100vw;
+    height: 100px;
+}
+}
