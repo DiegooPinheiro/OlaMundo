@@ -1,6 +1,6 @@
 *{
-    margin:0;
-    padding: 0;
+   /*  margin:0; */
+   /*  padding: 0; */
     box-sizing: border-box;
 }
 :root{
@@ -15,6 +15,7 @@ body{
     flex-wrap: wrap;
     margin: 3px;
     flex: 1 1 100vw;
+    background: var(--color5);
     color: var(--color5);
 }
 header, nav, main, aside, footer{
@@ -29,7 +30,8 @@ header{
 nav {
     flex: 1 1 200px;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    justify-content: center;
 }
 main{
     flex: 20 1 500px;
@@ -47,11 +49,15 @@ footer{
     main{
         height: calc(100vh - 330px);
     }
-    iside {
+    aside {
         flex: 1 1 100px;
         height: 100px;
 
     }
+    .conteiner_button .czctn_btn{
+        display: flex;
+    }
+   
 }
 @media only screen and (max-width: 717px){
     nav {
@@ -66,20 +72,22 @@ footer{
 button {
     background:var(--color5);
     border: none;
-    padding: 10px 20px;
+    margin: 5px;
     display: inline-block;
     font-size: 15px;
     font-weight: 600;
-    width: 120px;
+    width: max-content;
     text-transform: uppercase;
     cursor: pointer;
-    transform: skew(-21deg);
+    transform: skew(0deg);
     color: var(--color1);
+    border-radius: 50px 50px 50px 50px;
+    
   }
   
   span {
     display: inline-block;
-    transform: skew(21deg);
+    transform: skew(0deg);
   }
   
   button::before {
@@ -93,6 +101,7 @@ button {
     opacity: 0;
     z-index: -1;
     transition: all 0.5s;
+    border-radius: 50px 50px 50px 50px;
   }
   
   button:hover {
@@ -108,12 +117,21 @@ button {
 
   .conteiner_button{
     display: flex;
-    flex-direction: column;
-    margin: 50px;
+    flex-direction:column;
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: space-around;
   }
+  @media  only screen and (max-width: 923px) 
+  {
+    .conteiner_button{
+        display: flexbox;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+    }
+  }
+
   
 
