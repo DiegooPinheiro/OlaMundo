@@ -1,126 +1,156 @@
-*{
-    /*  margin:0; */
-    /*  padding: 0; */
-     box-sizing: border-box;
- }
+
+* {
+	margin: 0; /* Remove a margem externa de todos os lados do elemento. */
+	padding: 0; /* Remove o espaçamento interno de todos os lados do elemento. */
+	box-sizing: border-box; /* Inclui o preenchimento e a borda na largura e altura. */
+}
+
  :root{
-     --color1: #000000;
-     --color2: #0e0f14;
-     --color3: #2a2a31;
-     --color4: #4f4b56;
-     --color5: #7a7180;
- }
- body{
-     display: flex;
-     flex-wrap: wrap;
-     margin: 3px;
-     flex: 1 1 100vw;
-     background: var(--color5);
-     color: var(--color5);
- }
- header, nav, main, aside, footer{
-     background: var(--color1);
-     display: flex;
-     margin: 3px;
- }
- header{
-     flex: 1 1 100vw;
-     height: 100px;
- }
- #openMenu, #closeMenu{
-     border: none;
-     background: var(--color5);
-     font-size: 30px;
-     font-weight: bold;
-     padding: 0px 5px 0px 5px;
-     cursor: pointer;
-     display: none;
- }
- 
- header #logo{
-     flex: 0 1 200px;
-     background-color: var(--color2);
- }
- nav {
-     flex: 1 1 100vw;
-     align-items: center;
-     justify-content: flex-end;
- }
- nav a{
-     margin: 3%;
-     font-size: 20pt;
- }
- main{
-     flex: 20 1 500px;
+    --color1: #000000;
+    --color2: #0e0f14;
+    --color3: #2a2a31;
+    --color4: #4f4b56;
+    --color5: #7a7180;
+}
+body {
+	display: flex; /* Exibição flexível.*/ /* Torna o elemento um flex container */ /* e os seus elementos internos em flex-itens.*/
+	flex-wrap: wrap; /* Quebra de linha quando os itens não couberem na largura da tela. */
+    flex: 1 1 100vw; /* Junção de flex-grow, flex-shrink e flex-basis.  */ /* flex-grow – Habilidade de um flex item crescer. */ /* flex-shrink - Capacidade de redução do item.*//* flex-basis – Tamanho inicial do item.*/
+	margin: 3px;   /* Margem de todos os lados. */
+    background: var(--color5); /* add */
+    color: var(--color5); /* add */
+}
+
+/* Formatação comum entre os elementos. */
+header, nav, main, aside, footer {
+	background: var(--color1); /* Cor do fundo. */
+	display: flex;
+	margin: 3px; /* Margem externa de todos os lados. */
+}
+
+/* Seletores para formatação individual. */
+
+header {
+	flex: 1 1 100vw; /* Junção de flex-grow, flex-shrink e flex-basis.*//* flex-grow – Habilidade de um flex item crescer.*//* flex-shrink - Capacidade de redução do item.*//* flex-basis – Tamanho inicial do item.*/
+    height: 100px;
+}
+
+header #logo {
+	display: flex;
+	flex: 0 1 200px; /* Junção de flex-grow, flex-shrink e flex-basis.*//* flex-grow – Habilidade de um flex item crescer.*//* flex-shrink - Capacidade de redução do item.*//* flex-basis – Tamanho inicial do item.*/
+	background: var(--color2); /* Cor do fundo. */
+    justify-content: center; /* Alinha os itens na vertical. */
+    align-items: center; /* Alinha os itens na horizontal. */
+}
+
+#openMenu, #closeMenu {
+	border: none; /* Remove a borda. */
+	background: var(--color4); /* Remove a cor de fundo. */
+	font-size: 30px; /* Tamanho da fonte. */
+	font-weight: bold; /* Espessura da forte. */
+	padding: 0px 5px 0px 5px; /* Margem ao redor do elemento  (superior, direito, inferior e esquerdo) */
+    cursor: pointer; /* Muda o cursor do mouse para ponteiro.*/
+    display: none; /* Oculta o elemento. */
+}
+
+nav {
+	justify-content: flex-end; /* Alinha os itens na vertical. */
+	align-items: center; /* Alinha os itens na horizontal. */
+	flex: 1 1 200px;
+}
+
+nav a {
+	margin: 0 3%; /* Margem de todos os lados. */
+    font-size: 15pt; /* Tamanho da fonte. */
+}
+
+main {
+	flex: 20 1 500px;
     height: calc(100vh - 224px);
     flex-wrap: wrap;
     overflow: auto;
- }
- main section{
-     width:100%;
-     height: 2000px;
-     margin: 10px;
-     background: linear-gradient(#0e0f14,#2a2a31,#4f4b56);
- }
- aside{
-     flex: 1 1 200px;
-    
- }
- footer{
-     flex: 1 1 100vw;
-     height: 100px;
- }
- a{
-     text-decoration: none;
-     color: var(--color5);
- }
- @media only screen and (max-width: 923px) {
-     header{
-         order:0;
-     }
-     main{
-         height: calc(100vh - 330px);
-         order:1;
-     }
- 
-     aside {
-         flex: 1 1 100px;
-         height: 100px;
-         order:2;
-     }
-     footer{
-         order:3;
-     }
- }
- 
- @media only screen and (max-width: 717px){
-     #openMenu #closeMenu {
-         display: block;
-     }
-     #openMenu{
-         margin-left: auto;
-     }
-     #closeMenu{
-         position: fixed;
-         right: 15px;
-         top: 15px;
- 
-     }
-     nav{
-         position: fixed;
-         flex-direction: column;
-         width: 100vw;
-         height: 100vh;
-         background: rgba(255, 255, 255, 0.8);
-         align-items: center;
-         justify-content: center;
-         margin: 0;
-         display:none;
-         opacity: 0;
-         transition: 0.3S;
-     }
- }
- 
-   
- 
+}
+main section{
+    width:100%;
+    height: 2000px;
+    margin: 10px;
+    background: linear-gradient(#0e0f14,#2a2a31,#4f4b56);
+}
+
+aside {
+	flex: 1 1 200px;
+}
+
+footer {
+	flex: 1 1 100vw;
+    height: 100px;
+}
+
+a {
+	text-decoration: none; /* Remove a decoração padrão do elemento. */
+	color: var(--color5); /* Definir a cor da fonte para o padrão do elemento pai.*/
+}
+/* @media only screen and (max-width: 923px) {
+    header{
+        order:0;
+    }
+    main{
+        height: calc(100vh - 330px);
+        order:1;
+    }
+
+    aside {
+        flex: 1 1 100px;
+        height: 100px;
+        order:2;
+    }
+    footer{
+        order:3;
+    }
+} */
+
+/* Altera o estilo dos elementos para serem apresentados */ 
+/* em telas menores que 717px. */
+@media only screen and (max-width: 717px) {
+	#openMenu, #closeMenu {
+		display: block; /* Retorna a visibilidade padrão. */
+	}
+	#openMenu {
+		margin-left: auto; /* Espaço a esquerda será preenchido automaticamente colocando os itens a direita. */
+	}
+	#closeMenu {
+		position: fixed; /* Torna a posição do elemento fixa.*/
+		right: 15px; /* Dispõe o elemento a 15px da esquerda.*/
+		top: 15px; /* Dispõe o elemento a 15px do topo.*/
+	}
+	header {
+		order: 0; /* Ordem da visualização dos elementos. */
+	}
+	nav {
+		order: 1; /* Ordem da visualização dos elementos. */
+		position: fixed; /* Torna a posição do elemento fixa. */
+		width: 100vw; /* Ocupa 100% da largura da tela de exibição. */
+		height: 100vh; /* Ocupa 100% da altura da tela de exibição. */
+		background: rgba(255, 255, 255, 0.8); /* Cor em RGB, mais transparência. */
+		flex-direction: column; /* Dispõe os itens em coluna. */
+		align-items: center; /* Alinha os itens na horizontal. */
+		justify-content: center; /* Alinha os itens na vertical. */
+		margin: 0; /* Remove a margem externa de todos os lados do elemento. */
+		display: none; /* Oculta o elemento. */
+		opacity: 0; /* Invisivel */
+		transition: 0.3s; /* Velocidade de transição de um estado para outro. */
+	}
+	nav a {
+		margin: 3%; /* Margem de todos os lados. */
+	}
+	main {
+		order: 2; /* Ordem da visualização dos elementos. */
+	}
+	aside {
+		order: 3; /* Ordem da visualização dos elementos. */
+	}
+	footer {
+		order: 4; /* Ordem da visualização dos elementos. */
+	}
+}
  
