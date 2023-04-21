@@ -153,4 +153,23 @@ a {
 		order: 4; /* Ordem da visualização dos elementos. */
 	}
 }
- 
+
+/* css do footer */
+.ConteinerGeralFooter{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content:space-evenly;
+	font-size: 13pt;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.ConteinerContatoFooter{
+	display: flex;
+	flex-direction: column;
+}
+
+.ConteinerItensContatoFooter, .ConteinerItensRedesFooter{
+	display: flex;
+	align-items: center;
+}
