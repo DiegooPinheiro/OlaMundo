@@ -212,3 +212,43 @@ a {
 	}
 
 }
+
+/* main */
+
+.conteinerGeralMain{
+	display: flex;
+	width: 75vw;
+	align-items: center;
+	justify-content: center;
+}
+.titleTextMain{
+	display: flex;
+	flex-direction: column;
+	letter-spacing: 1px;
+}
+.titleMain{
+	display: flex;
+	justify-content: center;
+	text-align: justify;
+}
+.titleMain > h1{
+	margin: 40px 40px 20px 40px;
+}
+.textMain{
+	display: flex;
+	text-align: justify;
+}
+.textMain > p{
+	margin: 10px 40px 20px 40px;
+}
+.imgMain{
+	display: flex;
+	width: 300px;
+	height: 300px;
+	align-items: center;
+	justify-content: center;
+	background: var(--color3);
+	border-radius: 50%;
+	box-shadow: var(--color2);
+	border-style:ridge var(--color3);
+}
