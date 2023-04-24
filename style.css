@@ -217,9 +217,8 @@ a {
 
 .conteinerGeralMain{
 	display: flex;
-	width: 75vw;
-	align-items: center;
 	justify-content: center;
+	margin: 20px 126px 20px;
 }
 .titleTextMain{
 	display: flex;
@@ -232,7 +231,7 @@ a {
 	text-align: justify;
 }
 .titleMain > h1{
-	margin: 40px 40px 20px 40px;
+	margin: 40px 40px 10px 40px;
 }
 .textMain{
 	display: flex;
@@ -243,12 +242,23 @@ a {
 }
 .imgMain{
 	display: flex;
-	width: 300px;
-	height: 300px;
-	align-items: center;
+	width: 500px;
+	height: 500px;
 	justify-content: center;
 	background: var(--color3);
 	border-radius: 50%;
 	box-shadow: var(--color2);
 	border-style:ridge var(--color3);
+
+}
+@media only screen and (max-width: 1564px){
+	.imgMain{
+		width: 200px;
+		height: 200px;
+	}
+	.imgMain >img{
+	width: 200px;
+	height: 200px;
+	}
+
 }
