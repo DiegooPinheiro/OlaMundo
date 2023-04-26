@@ -3,6 +3,10 @@
 	margin: 0; /* Remove a margem externa de todos os lados do elemento. */
 	padding: 0; /* Remove o espaçamento interno de todos os lados do elemento. */
 	box-sizing: border-box; /* Inclui o preenchimento e a borda na largura e altura. */
+	
+	
+	
+	
 }
 
  :root{
@@ -19,6 +23,7 @@ body {
 	margin: 3px;   /* Margem de todos os lados. */
     background: #FF3131; /* add */
     color: var(--color5); /* add */
+	
 }
 
 /* Formatação comum entre os elementos. */
@@ -26,6 +31,7 @@ header, nav, main, aside, footer {
 	background: var(--color1); /* Cor do fundo. */
 	display: flex;
 	margin: 3px; /* Margem externa de todos os lados. */
+	
 }
 
 /* Seletores para formatação individual. */
@@ -77,7 +83,7 @@ main section{
     width:100%;
     height: 2000px;
     margin: 10px;
-    background: linear-gradient(#FF3131,#ff914d);
+    background: linear-gradient(to right, #FF3131,#ff914d);
 }
 
 aside {
@@ -223,6 +229,8 @@ a {
 	font-size: 25pt;
 	margin: 0px 10px 10px 10px;
 	border-radius: 50%;
+	font-weight: bold;
+	
 	
 }
 .itensIside > a{
@@ -289,43 +297,45 @@ a {
 	position: relative;
 	color: #fff;
 	letter-spacing: 1px;
-	font-size: 40pt;
+	font-size: 57pt;
 	position: relative;
-	top: 210px;
-	left: 156px;
+	top: 301px;
+	left: 207px;
 	z-index: 1;
 	
 }
 .imgInicioMain{
 	position: relative;
 	bottom: 10px;
-	right: 10px;
-	
-	
+	right: 209px;
 }
 
 .titleInicioMain{
 	width: 41vw;
 	height: 30vh;
-
 }
 
 .btnMain{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 }
 @media only screen and (max-width: 1838px){
 	.conteinerGeralInicioMain{
 		display: flex;
 		flex-direction: column-reverse;
+		justify-content: center;
+		position: relative;
+		top: inherit;
+		left: inherit;
 	}
 	.imgInicioMain{
 		display: flex;
 		width: 100%;
 		justify-content: center;
-		
+		position: relative;
+		bottom: inherit;
+		right: inherit;
 	}
 	.conteinerInicioMain{
 		display: flex;
@@ -345,7 +355,6 @@ a {
 		width: inherit;
 		text-align: center;
 		
-	
 	}
 
 
