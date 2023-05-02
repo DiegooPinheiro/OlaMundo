@@ -85,7 +85,7 @@ main section{
     width:100%;
     height: 2000px;
     margin: 3px;
-    background: linear-gradient(to left, #FF3131,#ffffff);
+    background: linear-gradient(to left, #FF3131,#d50000);
 }
 
 aside {
