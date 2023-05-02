@@ -30,7 +30,7 @@ body {
 header, nav, main, aside, footer {
 	background: var(--color1); /* Cor do fundo. */
 	display: flex;
-	margin: 3px; /* Margem externa de todos os lados. */
+	margin: 1.5px; /* Margem externa de todos os lados. */
 	
 }
 
@@ -38,12 +38,13 @@ header, nav, main, aside, footer {
 
 header {
 	flex: 1 1 100vw; /* Junção de flex-grow, flex-shrink e flex-basis.*//* flex-grow – Habilidade de um flex item crescer.*//* flex-shrink - Capacidade de redução do item.*//* flex-basis – Tamanho inicial do item.*/
-    height: 100px;
+    height: 50px;
+    
 }
 
 header #logo {
 	display: flex;
-	flex: 0 1 200px; /* Junção de flex-grow, flex-shrink e flex-basis.*//* flex-grow – Habilidade de um flex item crescer.*//* flex-shrink - Capacidade de redução do item.*//* flex-basis – Tamanho inicial do item.*/
+	flex: 0 1 121px; /* Junção de flex-grow, flex-shrink e flex-basis.*//* flex-grow – Habilidade de um flex item crescer.*//* flex-shrink - Capacidade de redução do item.*//* flex-basis – Tamanho inicial do item.*/
 	background: var(--color2); /* Cor do fundo. */
     justify-content: center; /* Alinha os itens na vertical. */
     align-items: center; /* Alinha os itens na horizontal. */
@@ -51,7 +52,8 @@ header #logo {
 
 #openMenu, #closeMenu {
 	border: none; /* Remove a borda. */
-	background: #fff; /* Remove a cor de fundo. */
+    color: #fff;
+	background: none; /* Remove a cor de fundo. */
 	font-size: 30px; /* Tamanho da fonte. */
 	font-weight: bold; /* Espessura da forte. */
 	padding: 0px 5px 0px 5px; /* Margem ao redor do elemento  (superior, direito, inferior e esquerdo) */
@@ -67,14 +69,14 @@ nav {
 
 nav a {
 	margin: 0 3%; /* Margem de todos os lados. */
-    font-size: 25pt; /* Tamanho da fonte. */
+    font-size: 13pt; /* Tamanho da fonte. */
 	border-radius: 50%;
-	box-shadow: #FF3131 2px 2px 2px 2px;
+	box-shadow: #FF3131 0px 7px 7px -2px;
 }
 
 main {
 	flex: 20 1 500px;
-    height: calc(100vh - 224px);
+    height: calc(100vh - 111px);
     flex-wrap: wrap;
     overflow: auto;
 	background-color: #FF3131;
@@ -82,18 +84,21 @@ main {
 main section{
     width:100%;
     height: 2000px;
-    margin: 10px;
-    background: linear-gradient(to right, #FF3131,#722c00);
+    margin: 3px;
+    background: linear-gradient(to left, #FF3131,#ffffff);
 }
 
 aside {
-	flex: 1 1 200px;
+	flex: 1 1 100px;
 	justify-content: center;
+    height: auto;
+
 }
 
 footer {
 	flex: 1 1 100vw;
-    height: 100px;
+    height: 47px;
+    
 }
 
 a {
@@ -107,7 +112,7 @@ a {
 @media only screen and (max-width: 717px) {
 	#openMenu, #closeMenu {
 		display: block; /* Retorna a visibilidade padrão. */
-		margin: 8px 8px 8px 8px;
+		margin: 4px 8px 6px 8px;
 	}
 	#openMenu {
 		margin-left: auto; /* Espaço a esquerda será preenchido automaticamente colocando os itens a direita. */
@@ -149,14 +154,13 @@ a {
 		order: 4; /* Ordem da visualização dos elementos. */
 	}
 }
-
-/* css do footer */
+/*  footer */
 .ConteinerGeralFooter{
 	display: flex;
-	width: 99vw;
+	width: 98vw;
 	align-items: center;
 	justify-content:space-around;
-	font-size: 40pt;
+	font-size: 20pt;
 	font-weight: bold;
 	letter-spacing: 1px;
 }
@@ -183,10 +187,10 @@ a {
 @media only screen and (max-width: 717px){
 	.ConteinerGeralFooter{
 		display: flex;
-		width: 100vw;
+		width: 98vw;
 		align-items:center;
 		justify-content:space-around;
-		font-size: 40pt;
+		font-size: 20pt;
 		font-weight: bold;
 		letter-spacing: 1px;
 	}
@@ -198,6 +202,15 @@ a {
 	}
 }
 @media only screen and (max-width: 414px){
+    .ConteinerGeralFooter{
+		display: flex;
+		width: 98vw;
+		align-items:center;
+		justify-content:space-around;
+		font-size: 20pt;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
 	.ConteinerItensRedesFooter {
 		display: flex;
 		width: 90vw;
@@ -226,7 +239,7 @@ a {
 
 .itensIside > h1{
 	letter-spacing: 1px;
-	font-size: 25pt;
+	font-size: 12pt;
 	margin: 0px 10px 10px 10px;
 	border-radius: 50%;
 	font-weight: bold;
@@ -234,7 +247,7 @@ a {
 	
 }
 .itensIside > a{
-	font-size: 100pt;
+	font-size: 50pt;
 	margin:10px 10px 0px 10px;
 	cursor: pointer;
 	
@@ -242,15 +255,15 @@ a {
 .itensIside > p{
 
 	text-align:center;
-	font-size: 20pt;
+	font-size: 12pt;
 	margin: 0px 0px 0px 0px;
 }
 @media only screen and (max-width: 717px) {
 	aside {
 		border-radius: 50%;
 		position: absolute;
-		left: 29px;
-		bottom: 122px;
+		left: 13px;
+		bottom: 60px;
 	}
 
 	.conteinerConteinerGeralAside {
@@ -282,81 +295,63 @@ a {
 
 }
 
-/* main */
+/* MAIN */
+
 .conteinerGeralInicioMain{
 	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 2px 2px 36px 2px #000000;
+	border-radius: 12px;
+	
 }
 
 .conteinerInicioMain{
 	display: flex;
 	flex-direction: column;
-	width: 50%;
-	height: 36vh;
-	align-items: center;
-	justify-content: center;
-	position: relative;
+	height: 30vh;
 	color: #fff;
-	letter-spacing: 1px;
-	font-size: 57pt;
+	font-size: 30px;
 	position: relative;
-	top: 301px;
-	left: 207px;
+	left: 100px;
+	align-items: center;
+	justify-content: space-between;
 	z-index: 1;
 	
 }
+.titleInicioMain > h1{
+	color: #fff;
+	text-shadow: 
+	-3px -1px 35px #000000a8, 
+	-1px 1px 8px #fe0f0fa6,      
+	 1px -1px 37px #000000,    
+	 1px 0px 1px #000000;
+}
 .imgInicioMain{
 	position: relative;
-	bottom: 10px;
-	right: 209px;
+	right: 100px;
+	box-shadow: #00000084 -60px 0px 30px -33px;
+	border-radius: 50%;
+
+	
+}
+.btnMain > button{
+	background: linear-gradient(to bottom, #000000d2,#3b2b2b);
+	color: #fff;
+	width: 165px;
+	height: 50px;
+	border-radius: 12px;
+	box-shadow: #000000 2px 0px 35px 2px;
+	border: none;
+}
+.btnMain > button:hover{
+	background: linear-gradient(to top, #ffffff,#ff707089);
+	color: #000000;
+	width: 165px;
+	height: 50px;
+	border-radius: 12px;
+	box-shadow: #ffffff 2px 0px 35px 2px;
+	border: none;
 }
 
-.titleInicioMain{
-	width: 41vw;
-	height: 30vh;
-}
-
-.btnMain{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-@media only screen and (max-width: 1838px){
-	.conteinerGeralInicioMain{
-		display: flex;
-		flex-direction: column-reverse;
-		justify-content: center;
-		position: relative;
-		top: inherit;
-		left: inherit;
-	}
-	.imgInicioMain{
-		display: flex;
-		width: 100%;
-		justify-content: center;
-		position: relative;
-		bottom: inherit;
-		right: inherit;
-	}
-	.conteinerInicioMain{
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		align-items: center;
-		justify-content: center;
-		color: #fff;
-		letter-spacing: 1px;
-		font-size: 40pt;
-		position: relative;
-		top: inherit;
-		left: inherit;
-		z-index: 1;
-	}
-	.titleInicioMain{
-		width: inherit;
-		text-align: center;
-		
-	}
-
-
-}
 	
