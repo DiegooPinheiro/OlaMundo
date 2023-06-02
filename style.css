@@ -10,18 +10,18 @@
 }
 
  :root{
-    --color1: #000000;
-    --color2: #0e0f14;
-    --color3: #2a2a31;
-    --color4: #4f4b56;
-    --color5: #7a7180;
+    --color1: #140f07;
+    --color2: #102e46;
+    --color3: #0a6fa2;
+    --color4: #07b9ff;
+    --color5: #0efff9;
 }
 body {
 	display: flex; /* Exibição flexível.*/ /* Torna o elemento um flex container */ /* e os seus elementos internos em flex-itens.*/
 	flex-wrap: wrap; /* Quebra de linha quando os itens não couberem na largura da tela. */
     flex: 1 1 100vw; /* Junção de flex-grow, flex-shrink e flex-basis.  */ /* flex-grow – Habilidade de um flex item crescer. */ /* flex-shrink - Capacidade de redução do item.*//* flex-basis – Tamanho inicial do item.*/
 	margin: 3px;   /* Margem de todos os lados. */
-    background: #FF3131; /* add */
+    background: var(--color3); /* add */
     color: var(--color5); /* add */
 	
 }
@@ -70,8 +70,7 @@ nav {
 nav a {
 	margin: 0 3%; /* Margem de todos os lados. */
     font-size: 13pt; /* Tamanho da fonte. */
-	border-radius: 50%;
-	box-shadow: #FF3131 0px 7px 7px -2px;
+	
 }
 
 main {
@@ -79,13 +78,12 @@ main {
     height: calc(100vh - 111px);
     flex-wrap: wrap;
     overflow: auto;
-	background-color: #FF3131;
 }
 main section{
     width:100%;
     height: 2000px;
     margin: 3px;
-    background: linear-gradient(to left, #FF3131,#d50000);
+    background: linear-gradient(to left, #0a6fa2,#07b9ff);
 }
 
 aside {
@@ -103,7 +101,7 @@ footer {
 
 a {
 	text-decoration: none; /* Remove a decoração padrão do elemento. */
-	color: #fff; /* Definir a cor da fonte para o padrão do elemento pai.*/
+	color: var(--color5); /* Definir a cor da fonte para o padrão do elemento pai.*/
 }
 
 
@@ -141,7 +139,6 @@ a {
 	}
 	nav a {
 		margin: 3%; /* Margem de todos os lados. */
-		border-radius: none;
 		box-shadow: none;
 	}
 	main {
@@ -226,7 +223,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	color: #fff;
+	color: var(--color5);
 	justify-content: space-around;
 	align-items: center;
 }
@@ -298,11 +295,13 @@ a {
 /* MAIN */
 
 .conteinerGeralInicioMain{
+	
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	box-shadow: 2px 2px 36px 2px #000000;
-	border-radius: 12px;
+	border-radius: 0px 0px 12px 12px;
+	background: radial-gradient( #07b9ff ,#140f07);
 	
 }
 
@@ -320,19 +319,20 @@ a {
 	
 }
 .titleInicioMain > h1{
-	color: #fff;
+	color: linear-gradiente(to left, #102e46, #07b9ff);
 	text-shadow: 
-	-3px -1px 35px #000000a8, 
-	-1px 1px 8px #fe0f0fa6,      
-	 1px -1px 37px #000000,    
-	 1px 0px 1px #000000;
+	-1px -1px 5px #0efff9, 
+	-1px 1px 1px #140f07,      
+	 1px -1px 3px #102e46,    
+	 1px 0px 1px #140f07;
+	 opacity: 0.9;
 }
 .imgInicioMain{
 	position: relative;
 	right: 100px;
-	box-shadow: #00000084 -60px 0px 30px -33px;
-	border-radius: 50%;
-
+	/* box-shadow: #00000084 -60px 0px 30px -33px;
+	border-radius: 50%; */
+	opacity: 0.9;
 	
 }
 .btnMain > button{
@@ -343,14 +343,16 @@ a {
 	border-radius: 12px;
 	box-shadow: #000000 2px 0px 35px 2px;
 	border: none;
+	cursor: pointer;
+	
 }
 .btnMain > button:hover{
-	background: linear-gradient(to top, #ffffff,#ff707089);
-	color: #000000;
+	background: linear-gradient(to top, #0efff9,#07b9ff);
+	color: var(--color1);
 	width: 165px;
 	height: 50px;
 	border-radius: 12px;
-	box-shadow: #ffffff 2px 0px 35px 2px;
+	box-shadow: var(--color2) 2px 0px 35px 2px;
 	border: none;
 }
 
