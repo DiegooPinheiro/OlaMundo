@@ -297,16 +297,19 @@ a {
 .conteinerGeralInicioMain{
 	
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	/* align-items: center; */
+	/* justify-content: center; */
 	box-shadow: 2px 2px 36px 2px #000000;
 	border-radius: 0px 0px 12px 12px;
 	background: radial-gradient( #07b9ff ,#140f07);
+	width: 100%; 
+	height: 2000px;
+	
 	
 }
 
 .conteinerInicioMain{
-	display: flex;
+	/* display: flex; */
 	flex-direction: column;
 	height: 30vh;
 	color: #fff;
@@ -314,10 +317,11 @@ a {
 	position: relative;
 	left: 100px;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	z-index: 1;
-	
 }
+
+
 .titleInicioMain > h1{
 	color: linear-gradiente(to left, #102e46, #07b9ff);
 	text-shadow: 
