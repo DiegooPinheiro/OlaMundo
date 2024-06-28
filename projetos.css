@@ -295,8 +295,10 @@ a {
 /* MAIN */
 
 .conteinerGeralInicioMain{
+	
 	display: flex;
-	flex-direction: column;
+	/* align-items: center; */
+	/* justify-content: center; */
 	box-shadow: 2px 2px 36px 2px #000000;
 	border-radius: 0px 0px 12px 12px;
 	background: radial-gradient( #07b9ff ,#140f07);
@@ -307,22 +309,18 @@ a {
 }
 
 .conteinerInicioMain{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 90vh;
+	/* display: flex; */
+	flex-direction: column;
+	height: 30vh;
 	color: #fff;
 	font-size: 30px;
-	z-index: 1;
-	
-}
-
-.titleInicioMain{
-	align-items: center;
-	justify-content: center;
 	position: relative;
 	left: 100px;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
 }
+
 
 .titleInicioMain > h1{
 	color: linear-gradiente(to left, #102e46, #07b9ff);
@@ -332,21 +330,16 @@ a {
 	 1px -1px 3px #102e46,    
 	 1px 0px 1px #140f07;
 	 opacity: 0.9;
-	 letter-spacing: 1px;
 }
-
 .imgInicioMain{
-	align-items: center;
-	justify-content: center;
 	position: relative;
-	right:100px;
+	right: 100px;
 	/* box-shadow: #00000084 -60px 0px 30px -33px;
 	border-radius: 50%; */
-	opacity: 0.8;
-	z-index: -1;
+	opacity: 0.9;
 	
 }
-/* .btnMain > button{
+.btnMain > button{
 	background: linear-gradient(to bottom, #000000d2,#3b2b2b);
 	color: #fff;
 	width: 165px;
@@ -356,8 +349,8 @@ a {
 	border: none;
 	cursor: pointer;
 	
-} */
-/* .btnMain > button:hover{
+}
+.btnMain > button:hover{
 	background: linear-gradient(to top, #0efff9,#07b9ff);
 	color: var(--color1);
 	width: 165px;
@@ -365,23 +358,6 @@ a {
 	border-radius: 12px;
 	box-shadow: var(--color2) 2px 0px 35px 2px;
 	border: none;
-} */
-.conteinerSobreMim{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 28px;
+}
 
-}
-.conteinerSobreMim > h2{
-	color: white;
-	font-size: 40px;
-	letter-spacing: 1px;
-
-}
-.conteinerSobreMim > p {
-	color: whitesmoke;
-	text-align: justify;
-	font-size: 25px;
-	letter-spacing: 1px;
-}
+	
