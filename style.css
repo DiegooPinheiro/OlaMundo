@@ -290,12 +290,11 @@ a {
 		display: none;
 	}
 
-}
+
 
 /* MAIN */
 
 .conteinerGeralInicioMain{
-	
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -318,6 +317,15 @@ a {
 	z-index: 1;
 	
 }
+
+.titleInicioMain{
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	left: 100px;
+	
+}
+
 .titleInicioMain > h1{
 	color: linear-gradiente(to left, #102e46, #07b9ff);
 	text-shadow: 
@@ -326,13 +334,16 @@ a {
 	 1px -1px 3px #102e46,    
 	 1px 0px 1px #140f07;
 	 opacity: 0.9;
+	 letter-spacing: 1px;
 }
+
 .imgInicioMain{
 	position: relative;
 	right: 100px;
 	/* box-shadow: #00000084 -60px 0px 30px -33px;
 	border-radius: 50%; */
 	opacity: 0.9;
+	
 	
 }
 .btnMain > button{

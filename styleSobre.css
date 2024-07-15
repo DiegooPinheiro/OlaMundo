@@ -302,8 +302,6 @@ a {
 	background: radial-gradient( #07b9ff ,#140f07);
 	width: 100%; 
 	height: 2000px;
-	
-	
 }
 
 .conteinerInicioMain{
@@ -342,30 +340,11 @@ a {
 	right:100px;
 	/* box-shadow: #00000084 -60px 0px 30px -33px;
 	border-radius: 50%; */
-	opacity: 0.8;
+	opacity: 0.9;
 	z-index: -1;
 	
 }
-/* .btnMain > button{
-	background: linear-gradient(to bottom, #000000d2,#3b2b2b);
-	color: #fff;
-	width: 165px;
-	height: 50px;
-	border-radius: 12px;
-	box-shadow: #000000 2px 0px 35px 2px;
-	border: none;
-	cursor: pointer;
-	
-} */
-/* .btnMain > button:hover{
-	background: linear-gradient(to top, #0efff9,#07b9ff);
-	color: var(--color1);
-	width: 165px;
-	height: 50px;
-	border-radius: 12px;
-	box-shadow: var(--color2) 2px 0px 35px 2px;
-	border: none;
-} */
+
 .conteinerSobreMim{
 	display: flex;
 	flex-direction: column;
