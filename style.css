@@ -290,6 +290,7 @@ a {
 		display: none;
 	}
 
+}
 
 
 /* MAIN */
@@ -365,6 +366,7 @@ a {
 	border-radius: 12px;
 	box-shadow: var(--color2) 2px 0px 35px 2px;
 	border: none;
+
 }
 
 	
