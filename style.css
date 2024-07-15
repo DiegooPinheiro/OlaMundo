@@ -294,36 +294,30 @@ a {
 
 
 /* MAIN */
-
 .conteinerGeralInicioMain{
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	flex-direction: column;
 	box-shadow: 2px 2px 36px 2px #000000;
 	border-radius: 0px 0px 12px 12px;
 	background: radial-gradient( #07b9ff ,#140f07);
-	
+	width: 100%; 
+	height: 2000px;
 }
 
 .conteinerInicioMain{
 	display: flex;
-	flex-direction: column;
-	height: 30vh;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
 	color: #fff;
 	font-size: 30px;
-	position: relative;
-	left: 100px;
-	align-items: center;
-	justify-content: space-between;
 	z-index: 1;
-	
 }
 
 .titleInicioMain{
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	left: 100px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
 	
 }
 
@@ -336,17 +330,24 @@ a {
 	 1px 0px 1px #140f07;
 	 opacity: 0.9;
 	 letter-spacing: 1px;
+	 position: relative;
+	left: 100px;	
 }
 
 .imgInicioMain{
+	align-items: center;
+	justify-content: center;
 	position: relative;
-	right: 100px;
+	right:100px;
 	/* box-shadow: #00000084 -60px 0px 30px -33px;
 	border-radius: 50%; */
 	opacity: 0.9;
-	
+	z-index: -1;
 	
 }
+
+
+
 .btnMain > button{
 	background: linear-gradient(to bottom, #000000d2,#3b2b2b);
 	color: #fff;
@@ -356,6 +357,8 @@ a {
 	box-shadow: #000000 2px 0px 35px 2px;
 	border: none;
 	cursor: pointer;
+	position: relative;
+	left: 235px;
 	
 }
 .btnMain > button:hover{
@@ -366,7 +369,4 @@ a {
 	border-radius: 12px;
 	box-shadow: var(--color2) 2px 0px 35px 2px;
 	border: none;
-
 }
-
-	
