@@ -3,10 +3,7 @@
 	margin: 0; /* Remove a margem externa de todos os lados do elemento. */
 	padding: 0; /* Remove o espaçamento interno de todos os lados do elemento. */
 	box-sizing: border-box; /* Inclui o preenchimento e a borda na largura e altura. */
-	
-	
-	
-	
+
 }
 
  :root{
