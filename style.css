@@ -77,13 +77,49 @@ nav {
 	align-items: center; /* Alinha os itens na horizontal. */
 	flex: 1 1 200px;
 	
+	
+	
+	
+}
+.navMenu {
+	margin: 0 2%; 
+    font-size: 13pt; 
+	border-radius: 5px 5px 5px 5px;
+	width: 80px;
+	justify-content: center;
+	
+}
+.navMenu:hover{
+	background: linear-gradient(to bottom, #0efff9,#07b9ff);
+	box-shadow: var(--color2) 2px 0px 35px 2px;
+
+	
+}
+.navMenu > a:hover{
+	color: var(--color1);
+}
+
+
+.conteinerMenu{
+	display: flex;
+	justify-content: flex-end; 
+	align-items: center; 
+	flex: 1 1 200px;
+	margin-right: 30px;
+	height: 40px;
+	
+
 }
 
 nav a {
-	margin: 0 3%; /* Margem de todos os lados. */
+	display: flex;
     font-size: 13pt; /* Tamanho da fonte. */
+	justify-content: center;
+	align-items: center;
 	
+
 }
+
 
 main {
 	flex: 20 1 500px;
