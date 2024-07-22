@@ -87,16 +87,20 @@ nav {
 	border-radius: 5px 5px 5px 5px;
 	width: 80px;
 	justify-content: center;
-	
+
 }
-.navMenu:hover{
+/* .navMenu:hover{
 	background: linear-gradient(to bottom, #0efff9,#07b9ff);
 	box-shadow: var(--color2) 2px 0px 35px 2px;
-
 	
-}
+	
+} */
+
 .navMenu > a:hover{
-	color: var(--color1);
+	color: #fff;
+	font-size: 17pt;
+	transition: font-size 300ms;
+
 }
 
 
@@ -240,10 +244,12 @@ a {
 	
 }
 
-.itensRedesSociais > a:hover{
-	color: linear-gradient(to bottom, #0efff9,#ff00ae);
+.itensRedesSociais > a> ion-icon:hover{
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	transition: width, height 50ms;
 
-	
 }
 
 
@@ -422,25 +428,27 @@ a {
 
 
 .btnMain > button{
-	background: linear-gradient(to bottom, #000000d2,#3b2b2b);
-	color: #fff;
+	background: radial-gradient( #191f26d2,#131a20);
+	color:#fff;
 	width: 165px;
 	height: 50px;
 	border-radius: 12px;
-	box-shadow: #000000 2px 0px 35px 2px;
+	box-shadow: #282728 2px 0px 35px 2px;
 	border: none;
 	cursor: pointer;
 	position: relative;
 	left: 235px;
+	font-size: 16px;
 	
 }
 .btnMain > button:hover{
-	background: linear-gradient(to top, #0efff9,#07b9ff);
+	background: radial-gradient( #f5f5f5,#07b9ff);
 	color: var(--color1);
-	width: 165px;
-	height: 50px;
+	height: 55px;
 	border-radius: 12px;
 	box-shadow: var(--color2) 2px 0px 35px 2px;
 	border: none;
+	font-size: 18px;
+	transition: all 1000ms;
 }
 
