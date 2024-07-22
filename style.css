@@ -224,6 +224,7 @@ a {
 	justify-content: center;
 }
 .ConteinerItensRedesFooter{
+	position: absolute;
 	display: flex;
 	width: 20vw;
 	align-items: center;
@@ -237,6 +238,14 @@ a {
 	justify-content: space-evenly;
 	align-content: center;
 }
+
+.itensRedesSociais > a:hover{
+	color: linear-gradient(to bottom, #0efff9,#07b9ff);
+	box-shadow: var(--color2) 2px 0px 35px 2px;
+}
+
+
+
 @media only screen and (max-width: 717px){
 	.ConteinerGeralFooter{
 		display: flex;
