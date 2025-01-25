@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="contato.css">
-    <title>Sobre</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Layout</title>
 </head>
+
 <body>
-    
-        <header>
-            <a href="./layout.html" id="logo">Logo</a>
-            <button id="openMenu">&#9776;</button>
-            <nav id="menu">
-                <button id="closeMenu">X</button>
-                <a href="index.html">Inicio</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="projetos.html">Projetos</a>
-                <a href="contatos.html">Contato</a>
-            </nav>
-        </header>
+	<header>
+		<a href="./layout.html" id="logo">Logo</a>
+		<button id="openMenu">&#9776;</button>
+		<nav id="menu">
+			<button id="closeMenu">X</button>
+		<div class="conteinerMenu">
+            <div class="navMenu"><a href="index.html">Inicio</a></div>
+			<div  class="navMenu"><a href="sobre.html">Sobre</a></div>
+			<div  class="navMenu"><a href="projetos.html">Projetos</a></div>
+			<div  class="navMenu"><a href="contatos.html">Contato</a></div>
+        </div>
+		</nav>
+	</header>
+
 <!-- aside -->
-    <aside>
+	<aside>
         <div class="conteinerConteinerGeralAside">
             <div class="itensIside">
                 <h1>
@@ -38,8 +42,11 @@
                 </p>
             </div>
         </div>
-    </aside>
-    <main>
+	</aside>
+
+ <!-- MAIN -->
+  
+	<main>
 		<section>
             <div class="conteinerGeralInicioMain">
 
@@ -49,14 +56,18 @@
                         Hello Word! Eu sou Diego. <br>
                         Veja mais sobre mim.
                         </h1>
+                        <div class="btnMain">
+                            <button>Clique Aqui!</button>
+                        </div>
                     </div>
-                    <div class="btnMain">
-                        <!-- <button>Click Aqui</button> -->
+                    
+                    <div class="imgInicioMain">
+                        <!-- <img src="imgMain/1682307300517.png" alt="Minha Foto" width="600px" height="600px"> -->
                     </div>
+
+
                 </div>
-                <div class="imgInicioMain">
-                    <!-- <img src="imgMain/1682307300517.png" alt="Minha Foto" width="600px" height="600px"> -->
-                </div>
+                   
             </div>
 		</section>
 	</main>
@@ -67,26 +78,27 @@
         <div class="conteinerRedesSociesFooter">
             <div class="ConteinerItensRedesFooter">
                 <div class="itensRedesSociais">
-                    <a href="#">
-                        <span><ion-icon name="logo-instagram"></ion-icon></span>
+                    <a href="">
+                        <ion-icon name="logo-instagram"></ion-icon>
                         
                     </a>
                 </div>
                 <div class="itensRedesSociais">
                     <a href="#">
-                        <span><ion-icon name="logo-linkedin"></ion-icon></span>
+                        <ion-icon name="logo-linkedin"></ion-icon>
                         
                     </a>
                 </div>
                 <div class="itensRedesSociais">
                     <a href="#">
-                        <span><ion-icon name="logo-facebook"></ion-icon></span>
+                        <ion-icon name="logo-whatsapp"></ion-icon>
                         
                     </a>
                 </div>
                 <div class="itensRedesSociais">
                     <a href="#">
-                        <span><ion-icon name="logo-github"></ion-icon></span>
+                        <ion-icon name="logo-github"></ion-icon>
+                        
                         
                     </a>
                 </div>
@@ -100,6 +112,6 @@
 	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 	<!-- script do menu lateral -->
 	<script type="text/javascript" src="menu.js"></script>
-
 </body>
-</html>
+
+
