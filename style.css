@@ -28,12 +28,12 @@ body {
 main::-webkit-scrollbar{
 	width: 10px;
 	border-radius: 0px 25px 25px 0px;
-	background-color: #140f07;
+	background-color: var(--color1);
 }
 main::-webkit-scrollbar-thumb{
 	background-color: #0efff9;
 	border-radius: 3px 3px 3px 3px;
-	border-right: 2px solid;
+	/* border-right: 2px solid; */
 }
 
 
@@ -66,7 +66,7 @@ header #logo {
 
 #openMenu, #closeMenu {
 	border: none; /* Remove a borda. */
-    color: #fff;
+    color: #0efff9;
 	background: none; /* Remove a cor de fundo. */
 	font-size: 30px; /* Tamanho da fonte. */
 	font-weight: bold; /* Espessura da forte. */
@@ -100,7 +100,7 @@ nav {
 } */
 
 .navMenu > a:hover{
-	color: #fff;
+	color: #0efff9;
 	font-size: 17pt;
 	transition: font-size 300ms;
 
@@ -120,7 +120,7 @@ nav {
 
 nav a {
 	display: flex;
-    font-size: 13pt; /* Tamanho da fonte. */
+    font-size: 15pt; /* Tamanho da fonte. */
 	justify-content: center;
 	align-items: center;
 	
@@ -164,7 +164,7 @@ footer {
 
 a {
 	text-decoration: none; /* Remove a decoração padrão do elemento. */
-	color: var(--color5); /* Definir a cor da fonte para o padrão do elemento pai.*/
+	color: var(--color8); /* Definir a cor da fonte para o padrão do elemento pai.*/
 }
 
 
@@ -248,7 +248,7 @@ a {
 }
 
 .itensRedesSociais > a> ion-icon:hover{
-	color: #fff;
+	color: #0efff9;
 	width: 40px;
 	height: 40px;
 	transition: width, height 50ms;
@@ -299,7 +299,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	color: var(--color5);
+	color: var(--color8);
 	justify-content: space-around;
 	align-items: center;
 }
