@@ -6,11 +6,14 @@
 }
 
  :root{
-    --color1: #140f07;
-    --color2: #102e46;
-    --color3: #0a6fa2;
-    --color4: #07b9ff;
-    --color5: #0efff9;
+    --color1: #000000;
+    --color2: #171718;
+    --color3: #262729;
+    --color4: #36383b;
+    --color5: #4c4f52;
+	--color6: #686b6f;
+	--color7: #86898d;
+	--color8: #a5a8ac;
 }
 body {
 	display: flex; /* Exibição flexível.*/ /* Torna o elemento um flex container */ /* e os seus elementos internos em flex-itens.*/
@@ -138,7 +141,7 @@ main section{
     width:100%;
     height: 90vh;
    /*  margin: 3px; */
-    background: linear-gradient(to left, #0a6fa2,#07b9ff);
+   	background: linear-gradient(to left, var(--color8), var(--color3));
 	border-radius: 0px 0px 0px 0px;
 
 	
@@ -372,7 +375,7 @@ a {
 	flex-direction: column;
 	box-shadow: 2px 2px 36px 2px #000000;
 	border-radius: 0px 0px 0px 0px;
-	background: radial-gradient( #07b9ff ,#140f07);
+	background: radial-gradient(var(--color5), var(--color3));
 	width: 100%; 
 	height: 90vh;
 	overflow: hidden;
