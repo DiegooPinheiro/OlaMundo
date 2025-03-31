@@ -411,13 +411,13 @@ a {
 	left: 100px;	
 }
 
-.imgInicioMain{
+/* .imgInicioMain{
 	align-items: center;
 	justify-content: center;
 	position: relative;
 	right:100px;
-	/* box-shadow: #00000084 -60px 0px 30px -33px;
-	border-radius: 50%; */
+	box-shadow: #00000084 -60px 0px 30px -33px;
+	border-radius: 50%;
 	opacity: 0.9;
 	z-index: -1;
 	object-fit: cover;
@@ -426,11 +426,11 @@ a {
 	
 	
 }
+ */
 
 
 
-
-.btnMain > button{
+/* .btnMain > button{
 	background: radial-gradient( #191f26d2,#131a20);
 	color:#fff;
 	width: 165px;
@@ -454,4 +454,4 @@ a {
 	font-size: 18px;
 	transition: all 1000ms;
 }
-
+ */
