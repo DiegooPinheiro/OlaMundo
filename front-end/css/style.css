@@ -118,9 +118,9 @@ nav {
   .nav__link.active-link {
 	color: #0efff9;
 	font-size: 17pt;
-	background: var(--color4);
-	box-shadow: var(--color4) 2px 0px 35px 2px;
-	border-radius: 5px 5px 5px 0px;
+	/* background: var(--color4); */
+	/* box-shadow: var(--color4) 2px 0px 35px 2px; */
+	/* border-radius: 5px 5px 5px 0px; */
 	
   }
   
@@ -413,10 +413,12 @@ a {
 /* --===== MAIN-HOME =====-- */
 .conteinerConteinerGeralHome{
 	/* background-color: #86898d; */
+	margin-top: 4rem;
 	gap: 19px;
 	padding: 2rem;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	width: 900px;
 	height: 72%;
 }
