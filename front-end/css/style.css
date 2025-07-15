@@ -414,12 +414,12 @@ a {
 .conteinerConteinerGeralHome{
 	/* background-color: #86898d; */
 	margin-top: 4rem;
-	gap: 19px;
+	gap: 20px;
 	padding: 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 900px;
+	width: 1100px;
 	height: 72%;
 }
 .conteinerTextoTitulos{
@@ -428,7 +428,7 @@ a {
 	gap: 16px;
 	width: 770px;
 	text-align: justify;
-	font-size: 19px;
+	font-size: 23px;
 	letter-spacing: 1px;
 	
 	
@@ -436,9 +436,9 @@ a {
 .conteinerImgMain{
 	display: flex;
 	background-color: #0efff9;
-	border-radius: 50% 50% 50% 100px;
-	width: 600px;
-	height: 290px;
+	border-radius: 50% 50% 50% 30%;
+	width: 700px;
+	height: 390px;
 	align-items: center;
 	justify-content: center;
 }
