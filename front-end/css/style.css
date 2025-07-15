@@ -163,7 +163,7 @@ main {
 	
 }
 main section{
-	color: white;
+	color: rgb(255, 255, 255);
 	padding: 3rem;
 	display: flex;
 	flex-direction: column;
@@ -171,6 +171,7 @@ main section{
     height: 90vh;
    /*  margin: 3px; */
 	border-radius: 0px 0px 0px 0px;
+	align-items: center;
 
 	
 }
@@ -411,11 +412,31 @@ a {
 
 /* --===== MAIN-HOME =====-- */
 .conteinerConteinerGeralHome{
+	/* background-color: #86898d; */
+	gap: 19px;
 	padding: 2rem;
-	gap: 16px; 
+	display: flex;
+	justify-content: center;
+	width: 900px;
+	height: 72%;
+}
+.conteinerTextoTitulos{
 	display: flex;
 	flex-direction: column;
+	gap: 16px;
+	width: 770px;
+	text-align: justify;
+	font-size: 19px;
+	letter-spacing: 1px;
+	
+	
+}
+.conteinerImgMain{
+	display: flex;
+	background-color: #0efff9;
+	border-radius: 50% 50% 50% 100px;
+	width: 600px;
+	height: 290px;
+	align-items: center;
 	justify-content: center;
-	width: 90dvh;
-	height: 100%;
 }
