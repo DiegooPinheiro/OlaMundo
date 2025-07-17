@@ -513,7 +513,15 @@ a {
 	color: #00ffc3;
 }
 
-  
-  
+
+/* --===== SKILLS =====-- */
+
+#skills{
+	font-size: clamp(12px, 4vw, 23px);
+	color:#0efff9;
+}
+
+
+
 
   
