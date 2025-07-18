@@ -14,13 +14,15 @@
 	--color6: #686b6f;
 	--color7: #86898d;
 	--color8: #a5a8ac;
+	--color9: #0efff9;
 }
 body {
 	display: flex; /* Exibição flexível.*/ /* Torna o elemento um flex container */ /* e os seus elementos internos em flex-itens.*/
 	flex-wrap: wrap; /* Quebra de linha quando os itens não couberem na largura da tela. */
     flex: 1 1 100vw; /* Junção de flex-grow, flex-shrink e flex-basis.  */ /* flex-grow – Habilidade de um flex item crescer. */ /* flex-shrink - Capacidade de redução do item.*//* flex-basis – Tamanho inicial do item.*/
 	margin: 3px;   /* Margem de todos os lados. */
-    background: var(--color3); /* add */
+    /* background: var(--color3); */
+	background: var(--color9); /* add */
     color: var(--color5); /* add */
 	overflow: hidden;
 }
@@ -169,13 +171,13 @@ main section{
 	color: rgb(255, 255, 255);
 	padding: 3rem;
 	display: flex;
-	flex-direction: column;
+	/* flex-direction: column; */
     width:100%;
 	max-width: 1200px;
     /* height: 85vh; */
 	border-radius: 0px 0px 0px 0px;
 	align-items: center;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 }
 
 
@@ -487,6 +489,7 @@ a {
 	max-width: 1000px;
 	margin: auto;
 	
+	
 }
   
 .textoSobreMim p {
@@ -501,6 +504,7 @@ a {
 	flex-wrap: wrap;
 	gap: 10px;
 	line-height: 1.6;
+	border: 1px solid, #0efff9 ;
 }
   
 .textoSobreMim i {
@@ -519,7 +523,19 @@ a {
 #skills{
 	font-size: clamp(12px, 4vw, 23px);
 	color:#0efff9;
+	display: flex;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 }
+.conteinerConteinerGeralSkills{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 1rem;
+
+}
+
 
 
 
