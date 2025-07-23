@@ -2,7 +2,7 @@
 	display: flex;
 	padding: 3rem;
 	overflow-x: scroll;
-	
+
 
 }
 
@@ -35,7 +35,7 @@
 	background: #17141d;
 	box-shadow: -1rem 0 3rem #000;
 	transition: .2s;
-	border: 1px solid, #0efff9 ;
+	border: 1px solid, #0efff9;
 }
 
 
@@ -54,37 +54,70 @@
 }
 
 .card-header {
-    margin-bottom: auto;
-	background-color: #00000031 ;
-	align-items: center;
+	margin-bottom: auto;
+	background-color: #00000031;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	/* Alinha ao topo */
+	align-items: stretch;
+	/* Ocupa toda largura */
+	height: 100%;
+	/* padding: 1rem; */
+
 }
 
 .card-header p {
-    font-size: 14px;
-    margin: 0 0 1rem;
-    color: #0efff9 ;
+	font-size: 14px;
+	margin: 0 0 1rem;
+	color: #0efff9;
+	align-items: center;
 }
 
 .card-header h2 {
-    font-size: 20px;
-    margin: .25rem 0 auto;
-    cursor: pointer;
+	display: flex;
+	font-size: 20px;
+	margin: 10px;
+	cursor: pointer;
+	align-self: flex-start;
+
+
+
 }
 
 .card-header h2:hover {
-    background: linear-gradient(90deg,#0efff9,#ffffff);
-    text-shadow: none;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	background: linear-gradient(90deg, #0efff9, #ffffff);
+	text-shadow: none;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
+/*conteiner titulo do card */
+.conteinerTitulo {
+	.conteinerTitulo {
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    align-items: center;
+    width: 100%;
+    margin: 2px 0 0 2px;
+}
+
+}
+
+.conteinerTitulo h2 {
+	font-size: 20px;
+	color: #ffffff;
+	margin: 0;
+}
 
 
 /* conteudo de dentro do cardes */
 
-.conteinerLogoSvg{
+.conteinerLogoSvg {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex: 1;
+	/* Ocupa o restante do espaço vertical */
 }
