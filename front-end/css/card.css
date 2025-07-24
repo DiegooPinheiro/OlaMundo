@@ -120,4 +120,7 @@
 	align-items: center;
 	flex: 1;
 	/* Ocupa o restante do espaço vertical */
+	background: linear-gradient(90deg, #0efff9, #ffffff);
+	border-radius:2%;
+
 }
